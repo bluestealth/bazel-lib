@@ -10,6 +10,8 @@ workspaces:
           queue: bazel-lib-small
       - format:
           without: true
+      - lint:
+          without: true
       - gazelle:
           without: true
       - configure:
@@ -24,6 +26,8 @@ workspaces:
       - test:
           queue: bazel-lib-small
       - format:
+          without: true
+      - lint:
           without: true
       - gazelle:
           without: true
@@ -40,6 +44,8 @@ workspaces:
           queue: bazel-lib-small
       - format:
           without: true
+      - lint:
+          without: true
       - gazelle:
           without: true
       - configure:
@@ -55,6 +61,8 @@ workspaces:
           queue: bazel-lib-small
       - format:
           without: true
+      - lint:
+          without: true
       - gazelle:
           without: true
       - configure:
@@ -69,6 +77,8 @@ workspaces:
       - test:
           queue: bazel-lib-small
       - format:
+          without: true
+      - lint:
           without: true
       - gazelle:
           without: true
@@ -88,6 +98,8 @@ tasks:
       artifact_paths:
         - vmstat.out
   - format:
+      queue: bazel-lib-small
+  - lint:
       queue: bazel-lib-small
   - gazelle:
       queue: bazel-lib-small
