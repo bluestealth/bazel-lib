@@ -10,6 +10,8 @@ load("//lib:testing.bzl", "assert_contains")
 load("//lib:write_source_files.bzl", "write_source_files")
 load("//lib:yq.bzl", "yq")
 
+exports_files([".shellcheckrc"])
+
 # gazelle:prefix github.com/aspect-build/bazel-lib
 
 gazelle_binary(
